@@ -1,717 +1,134 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;\f2\fnil\fcharset0 LucidaGrande;
-}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech & AI Intelligence</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+        header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e7eb; }
+        h1 { font-size: 28px; font-weight: 600; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 13px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 1.5rem 0; }
+        .metric { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; }
+        .metric-label { font-size: 12px; color: #6b7280; text-transform: uppercase; margin-bottom: 6px; }
+        .metric-value { font-size: 24px; font-weight: 600; }
+        .filters { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px; margin-bottom: 2rem; }
+        .filter-group { margin-bottom: 14px; }
+        label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 8px; text-transform: uppercase; color: #374151; }
+        input, select { width: 100%; padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px; }
+        .buttons { display: flex; gap: 8px; margin-top: 1rem; }
+        button { padding: 8px 12px; background: white; border: 1px solid #e5e7eb; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; }
+        button:hover { background: #f3f4f6; }
+        button.primary { background: #1e40af; color: white; border-color: #1e40af; }
+        button.primary:hover { background: #3b82f6; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 18px; font-weight: 600; margin-bottom: 1rem; }
+        .news-grid { display: grid; gap: 14px; }
+        .news-card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; }
+        .news-card:hover { border-color: #d1d5db; }
+        .card-headline { font-size: 16px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+        .card-summary { font-size: 14px; color: #4b5563; margin-bottom: 12px; line-height: 1.6; }
+        .card-footer { display: flex; justify-content: space-between; font-size: 12px; padding-top: 12px; border-top: 1px solid #f3f4f6; }
+        .tag { display: inline-block; background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .tag.canada { background: #fecaca; color: #dc2626; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tech & AI Intelligence</h1>
+            <p class="subtitle">Global news with Canada priority • Updated daily</p>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-label">Status</div>
+                    <div class="metric-value">Live ✓</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Stories</div>
+                    <div class="metric-value">6</div>
+                </div>
+            </div>
+        </header>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Tech & AI Intelligence \'97 ventureLAB External Relations</title>\
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/tabler-icons.min.css" rel="stylesheet">\
-    <style>\
-        * \{\
-            margin: 0;\
-            padding: 0;\
-            box-sizing: border-box;\
-        \}\
-\
-        :root \{\
-            --primary: #1e40af;\
-            --primary-light: #3b82f6;\
-            --canada: #dc2626;\
-            --success: #10b981;\
-            --neutral-900: #111827;\
-            --neutral-800: #1f2937;\
-            --neutral-700: #374151;\
-            --neutral-600: #4b5563;\
-            --neutral-500: #6b7280;\
-            --neutral-400: #9ca3af;\
-            --neutral-300: #d1d5db;\
-            --neutral-200: #e5e7eb;\
-            --neutral-100: #f3f4f6;\
-            --neutral-50: #f9fafb;\
-        \}\
-\
-        @media (prefers-color-scheme: dark) \{\
-            :root \{\
-                --neutral-900: #f9fafb;\
-                --neutral-800: #f3f4f6;\
-                --neutral-700: #e5e7eb;\
-                --neutral-600: #d1d5db;\
-                --neutral-500: #9ca3af;\
-                --neutral-400: #6b7280;\
-                --neutral-300: #4b5563;\
-                --neutral-200: #374151;\
-                --neutral-100: #1f2937;\
-                --neutral-50: #111827;\
-            \}\
-        \}\
-\
-        html \{ scroll-behavior: smooth; \}\
-        body \{\
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\
-            background: var(--neutral-50);\
-            color: var(--neutral-900);\
-            line-height: 1.6;\
-        \}\
-\
-        .container \{\
-            max-width: 1100px;\
-            margin: 0 auto;\
-            padding: 2rem 1.5rem;\
-        \}\
-\
-        header \{\
-            margin-bottom: 2.5rem;\
-            padding-bottom: 1.5rem;\
-            border-bottom: 1px solid var(--neutral-200);\
-        \}\
-\
-        .header-wrapper \{\
-            display: flex;\
-            justify-content: space-between;\
-            align-items: flex-start;\
-            margin-bottom: 1.5rem;\
-        \}\
-\
-        .header-content h1 \{\
-            font-size: 28px;\
-            font-weight: 600;\
-            margin-bottom: 0.25rem;\
-            letter-spacing: -0.5px;\
-        \}\
-\
-        .header-content p \{\
-            font-size: 13px;\
-            color: var(--neutral-500);\
-            text-transform: uppercase;\
-            letter-spacing: 0.5px;\
-        \}\
-\
-        .header-actions \{\
-            display: flex;\
-            gap: 10px;\
-        \}\
-\
-        button \{\
-            display: flex;\
-            align-items: center;\
-            gap: 8px;\
-            padding: 9px 14px;\
-            background: white;\
-            border: 1px solid var(--neutral-300);\
-            border-radius: 6px;\
-            font-size: 13px;\
-            font-weight: 500;\
-            cursor: pointer;\
-            color: var(--neutral-700);\
-            transition: all 0.2s;\
-        \}\
-\
-        button:hover \{\
-            background: var(--neutral-100);\
-            border-color: var(--neutral-400);\
-        \}\
-\
-        button.primary \{\
-            background: var(--primary);\
-            color: white;\
-            border-color: var(--primary);\
-        \}\
-\
-        button.primary:hover \{\
-            background: var(--primary-light);\
-            border-color: var(--primary-light);\
-        \}\
-\
-        .metrics \{\
-            display: grid;\
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));\
-            gap: 12px;\
-            margin-bottom: 2rem;\
-        \}\
-\
-        .metric \{\
-            background: white;\
-            border: 1px solid var(--neutral-200);\
-            border-radius: 8px;\
-            padding: 16px;\
-        \}\
-\
-        .metric-label \{\
-            font-size: 12px;\
-            text-transform: uppercase;\
-            letter-spacing: 0.5px;\
-            color: var(--neutral-500);\
-            margin-bottom: 6px;\
-        \}\
-\
-        .metric-value \{\
-            font-size: 24px;\
-            font-weight: 600;\
-            color: var(--neutral-900);\
-        \}\
-\
-        .filters \{\
-            background: white;\
-            border: 1px solid var(--neutral-200);\
-            border-radius: 8px;\
-            padding: 18px;\
-            margin-bottom: 2rem;\
-        \}\
-\
-        .filter-group \{\
-            margin-bottom: 16px;\
-        \}\
-\
-        .filter-label \{\
-            display: block;\
-            font-size: 13px;\
-            font-weight: 500;\
-            margin-bottom: 8px;\
-            color: var(--neutral-700);\
-            text-transform: uppercase;\
-            letter-spacing: 0.5px;\
-        \}\
-\
-        input[type="text"], select \{\
-            width: 100%;\
-            padding: 10px 12px;\
-            border: 1px solid var(--neutral-300);\
-            border-radius: 6px;\
-            font-size: 14px;\
-            background: var(--neutral-50);\
-            color: var(--neutral-900);\
-        \}\
-\
-        input[type="text"]:focus, select:focus \{\
-            outline: none;\
-            background: white;\
-            border-color: var(--primary);\
-            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);\
-        \}\
-\
-        .region-filters \{\
-            display: flex;\
-            gap: 8px;\
-        \}\
-\
-        .region-btn \{\
-            flex: 1;\
-            padding: 9px 12px;\
-            background: var(--neutral-100);\
-            border: 1px solid var(--neutral-300);\
-            border-radius: 6px;\
-            font-size: 13px;\
-            font-weight: 500;\
-            cursor: pointer;\
-            color: var(--neutral-700);\
-        \}\
-\
-        .region-btn.active \{\
-            background: var(--primary);\
-            color: white;\
-            border-color: var(--primary);\
-        \}\
-\
-        .section \{\
-            margin-bottom: 3rem;\
-        \}\
-\
-        .section-header \{\
-            display: flex;\
-            align-items: center;\
-            gap: 12px;\
-            margin-bottom: 1.5rem;\
-        \}\
-\
-        .section-accent \{\
-            width: 3px;\
-            height: 20px;\
-            border-radius: 1px;\
-            background: var(--primary);\
-        \}\
-\
-        .section-accent.canada \{\
-            background: var(--canada);\
-        \}\
-\
-        .section-title \{\
-            font-size: 18px;\
-            font-weight: 600;\
-            color: var(--neutral-900);\
-        \}\
-\
-        .news-grid \{\
-            display: grid;\
-            gap: 14px;\
-        \}\
-\
-        .news-card \{\
-            background: white;\
-            border: 1px solid var(--neutral-200);\
-            border-radius: 8px;\
-            padding: 20px;\
-            transition: all 0.2s;\
-        \}\
-\
-        .news-card:hover \{\
-            border-color: var(--neutral-300);\
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);\
-        \}\
-\
-        .card-header \{\
-            display: flex;\
-            justify-content: space-between;\
-            align-items: flex-start;\
-            margin-bottom: 12px;\
-            gap: 12px;\
-        \}\
-\
-        .card-tags \{\
-            display: flex;\
-            gap: 8px;\
-            flex-wrap: wrap;\
-        \}\
-\
-        .tag \{\
-            display: inline-flex;\
-            align-items: center;\
-            gap: 4px;\
-            padding: 4px 9px;\
-            background: var(--neutral-100);\
-            border-radius: 4px;\
-            font-size: 12px;\
-            font-weight: 500;\
-            color: var(--neutral-600);\
-        \}\
-\
-        .tag.canada-badge \{\
-            background: rgba(220, 38, 38, 0.1);\
-            color: var(--canada);\
-            font-weight: 600;\
-        \}\
-\
-        .card-date \{\
-            font-size: 12px;\
-            color: var(--neutral-500);\
-            white-space: nowrap;\
-        \}\
-\
-        .card-headline \{\
-            font-size: 16px;\
-            font-weight: 600;\
-            line-height: 1.4;\
-            margin-bottom: 10px;\
-            color: var(--neutral-900);\
-        \}\
-\
-        .card-summary \{\
-            font-size: 14px;\
-            line-height: 1.6;\
-            color: var(--neutral-600);\
-            margin-bottom: 14px;\
-        \}\
-\
-        .card-footer \{\
-            display: flex;\
-            justify-content: space-between;\
-            align-items: center;\
-            padding-top: 12px;\
-            border-top: 1px solid var(--neutral-100);\
-            font-size: 12px;\
-        \}\
-\
-        .card-source \{\
-            color: var(--neutral-500);\
-            font-weight: 500;\
-        \}\
-\
-        .card-link \{\
-            color: var(--primary);\
-            text-decoration: none;\
-            font-weight: 500;\
-        \}\
-\
-        .empty-state \{\
-            text-align: center;\
-            padding: 48px 24px;\
-            color: var(--neutral-500);\
-        \}\
-\
-        .modal \{\
-            display: none;\
-            position: fixed;\
-            top: 50%;\
-            left: 50%;\
-            transform: translate(-50%, -50%);\
-            background: white;\
-            border: 1px solid var(--neutral-300);\
-            border-radius: 10px;\
-            padding: 28px;\
-            z-index: 1000;\
-            min-width: 420px;\
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);\
-        \}\
-\
-        .modal.active \{\
-            display: block;\
-        \}\
-\
-        .modal-header \{\
-            display: flex;\
-            justify-content: space-between;\
-            align-items: center;\
-            margin-bottom: 24px;\
-        \}\
-\
-        .modal-title \{\
-            font-size: 20px;\
-            font-weight: 600;\
-        \}\
-\
-        .modal-close \{\
-            background: none;\
-            border: none;\
-            font-size: 24px;\
-            cursor: pointer;\
-            color: var(--neutral-500);\
-            padding: 0;\
-        \}\
-\
-        .form-group \{\
-            margin-bottom: 18px;\
-        \}\
-\
-        .form-group label \{\
-            display: block;\
-            font-size: 13px;\
-            font-weight: 500;\
-            margin-bottom: 8px;\
-            color: var(--neutral-700);\
-            text-transform: uppercase;\
-            letter-spacing: 0.5px;\
-        \}\
-\
-        .form-group input, .form-group select, .form-group textarea \{\
-            width: 100%;\
-            padding: 10px 12px;\
-            border: 1px solid var(--neutral-300);\
-            border-radius: 6px;\
-            font-size: 14px;\
-            background: var(--neutral-50);\
-            color: var(--neutral-900);\
-            font-family: inherit;\
-        \}\
-\
-        .form-group textarea \{\
-            resize: vertical;\
-            min-height: 100px;\
-        \}\
-\
-        .modal-buttons \{\
-            display: flex;\
-            gap: 10px;\
-            margin-top: 24px;\
-        \}\
-\
-        .modal-buttons button \{\
-            flex: 1;\
-        \}\
-\
-        .overlay \{\
-            display: none;\
-            position: fixed;\
-            top: 0;\
-            left: 0;\
-            right: 0;\
-            bottom: 0;\
-            background: rgba(0, 0, 0, 0.5);\
-            z-index: 999;\
-        \}\
-\
-        .overlay.active \{\
-            display: block;\
-        \}\
-\
-        .icon \{\
-            font-size: 16px;\
-        \}\
-    </style>\
-</head>\
-<body>\
-    <div class="container">\
-        <header>\
-            <div class="header-wrapper">\
-                <div class="header-content">\
-                    <h1>Tech & AI Intelligence</h1>\
-                    <p>Global news with Canada priority \'95 Updated daily</p>\
-                </div>\
-                <div class="header-actions">\
-                    <button onclick="refreshNews()">\
-                        <i class="ti ti-refresh icon"></i>Refresh\
-                    </button>\
-                    <button class="primary" onclick="toggleEmailSettings()">\
-                        <i class="ti ti-mail icon"></i>Email Digest\
-                    </button>\
-                </div>\
-            </div>\
-\
-            <div class="metrics">\
-                <div class="metric">\
-                    <div class="metric-label">Last updated</div>\
-                    <div class="metric-value" id="last-refresh">\'97</div>\
-                </div>\
-                <div class="metric">\
-                    <div class="metric-label">Canada</div>\
-                    <div class="metric-value" id="canada-count">\'97</div>\
-                </div>\
-                <div class="metric">\
-                    <div class="metric-label">Global</div>\
-                    <div class="metric-value" id="global-count">\'97</div>\
-                </div>\
-                <div class="metric">\
-                    <div class="metric-label">Total</div>\
-                    <div class="metric-value" id="total-count">\'97</div>\
-                </div>\
-            </div>\
-        </header>\
-\
-        <div class="filters">\
-            <div class="filter-group">\
-                <label class="filter-label">Search stories</label>\
-                <input type="text" id="keyword-filter" placeholder="E.g., AI policy, venture capital, quantum...">\
-            </div>\
-\
-            <div class="filter-group">\
-                <label class="filter-label">View</label>\
-                <div class="region-filters">\
-                    <button class="region-btn active" onclick="setRegionFilter('all')" id="btn-all">All news</button>\
-                    <button class="region-btn" onclick="setRegionFilter('canada')" id="btn-canada">Canada priority</button>\
-                    <button class="region-btn" onclick="setRegionFilter('global')" id="btn-global">Global only</button>\
-                </div>\
-            </div>\
-        </div>\
-\
-        <div id="canada-section" class="section">\
-            <div class="section-header">\
-                <span class="section-accent canada"></span>\
-                <h2 class="section-title">Canada Priority</h2>\
-            </div>\
-            <div id="canada-news" class="news-grid"></div>\
-        </div>\
-\
-        <div id="global-section" class="section">\
-            <div class="section-header">\
-                <span class="section-accent"></span>\
-                <h2 class="section-title">Global Developments</h2>\
-            </div>\
-            <div id="global-news" class="news-grid"></div>\
-        </div>\
-    </div>\
-\
-    <div id="overlay" class="overlay" onclick="toggleEmailSettings()"></div>\
-\
-    <div id="email-settings" class="modal">\
-        <div class="modal-header">\
-            <h2 class="modal-title">Email Digest Settings</h2>\
-            <button class="modal-close" onclick="toggleEmailSettings()">\'d7</button>\
-        </div>\
-\
-        <form id="email-form">\
-            <div class="form-group">\
-                <label for="team-email">Team email address</label>\
-                <input type="email" id="team-email" placeholder="external-relations@venturelab.ca" required>\
-            </div>\
-\
-            <div class="form-group">\
-                <label for="send-time">Send time (EST)</label>\
-                <select id="send-time">\
-                    <option value="09:00">9:00 AM</option>\
-                    <option value="12:00">12:00 PM</option>\
-                    <option value="14:00">2:00 PM</option>\
-                    <option value="17:00">5:00 PM</option>\
-                </select>\
-            </div>\
-\
-            <div class="modal-buttons">\
-                <button type="button" class="primary" onclick="saveEmailSettings()">Save settings</button>\
-                <button type="button" onclick="toggleEmailSettings()">Cancel</button>\
-            </div>\
-        </form>\
-    </div>\
-\
-    <script>\
-        const API_URL = 'https://YOUR-BACKEND-URL-HERE/api';\
-\
-        let allNews = \{ canada: [], global: [] \};\
-        let currentRegionFilter = 'all';\
-        let currentKeywords = [];\
-\
-        async function fetchNews() \{\
-            try \{\
-                const response = await fetch(`$\{API_URL\}/news`);\
-                const data = await response.json();\
-                allNews = data;\
-                updateMetrics();\
-                renderAll();\
-            \} catch (error) \{\
-                console.error('Error:', error);\
-                showSampleNews();\
-            \}\
-        \}\
-\
-        function showSampleNews() \{\
-            allNews = \{\
-                canada: [\
-                    \{\
-                        headline: "OpenAI expands Canadian operations with $50M Toronto research hub",\
-                        summary: "OpenAI announced a new research center in Toronto focused on AI safety.",\
-                        date: "Today",\
-                        category: "AI",\
-                        source: "BetaKit",\
-                        country: "Canada"\
-                    \},\
-                    \{\
-                        headline: "Ontario launches $100M innovation fund for quantum computing",\
-                        summary: "The province unveiled funding for early-stage quantum tech startups.",\
-                        date: "Today",\
-                        category: "Policy",\
-                        source: "Innovation.ca",\
-                        country: "Canada"\
-                    \}\
-                ],\
-                global: [\
-                    \{\
-                        headline: "OpenAI releases GPT-5 with multimodal reasoning",\
-                        summary: "New model shows significant improvements in complex problem-solving.",\
-                        date: "Today",\
-                        category: "AI",\
-                        source: "OpenAI Blog",\
-                        country: "Global"\
-                    \},\
-                    \{\
-                        headline: "EU finalizes AI Act implementation roadmap",\
-                        summary: "Clear timelines and compliance requirements set for businesses.",\
-                        date: "Today",\
-                        category: "Policy",\
-                        source: "EU",\
-                        country: "Global"\
-                    \}\
-                ]\
-            \};\
-            updateMetrics();\
-            renderAll();\
-        \}\
-\
-        function updateMetrics() \{\
-            const now = new Date();\
-            document.getElementById('last-refresh').textContent = `$\{now.getHours().toString().padStart(2, '0')\}:$\{now.getMinutes().toString().padStart(2, '0')\} EST`;\
-            document.getElementById('canada-count').textContent = allNews.canada.length;\
-            document.getElementById('global-count').textContent = allNews.global.length;\
-            document.getElementById('total-count').textContent = allNews.canada.length + allNews.global.length;\
-        \}\
-\
-        function renderNewsCards(newsArray, containerId) \{\
-            const container = document.getElementById(containerId);\
-            container.innerHTML = '';\
-\
-            if (newsArray.length === 0) \{\
-                container.innerHTML = '<div class="empty-state"><p>No stories match your filters.</p></div>';\
-                return;\
-            \}\
-\
-            newsArray.forEach(item => \{\
-                const card = document.createElement('div');\
-                card.className = 'news-card';\
-                card.innerHTML = `\
-                    <div class="card-header">\
-                        <div class="card-tags">\
-                            <span class="tag">$\{item.category\}</span>\
-                            $\{item.country === 'Canada' ? '<span class="tag canada-badge">
-\f1 \uc0\u55356 \u57153 
-\f0  Canada</span>' : ''\}\
-                        </div>\
-                        <div class="card-date">$\{item.date\}</div>\
-                    </div>\
-                    <h3 class="card-headline">$\{item.headline\}</h3>\
-                    <p class="card-summary">$\{item.summary\}</p>\
-                    <div class="card-footer">\
-                        <span class="card-source">$\{item.source\}</span>\
-                        <a href="#" class="card-link">Read 
-\f2 \uc0\u8594 
-\f0 </a>\
-                    </div>\
-                `;\
-                container.appendChild(card);\
-            \});\
-        \}\
-\
-        function filterNews() \{\
-            const input = document.getElementById('keyword-filter').value;\
-            currentKeywords = input.split(',').map(k => k.trim().toLowerCase()).filter(k => k.length > 0);\
-\
-            let canadaFiltered = allNews.canada;\
-            let globalFiltered = allNews.global;\
-\
-            if (currentKeywords.length > 0) \{\
-                canadaFiltered = allNews.canada.filter(item =>\
-                    currentKeywords.some(k => (item.headline + item.summary).toLowerCase().includes(k))\
-                );\
-                globalFiltered = allNews.global.filter(item =>\
-                    currentKeywords.some(k => (item.headline + item.summary).toLowerCase().includes(k))\
-                );\
-            \}\
-\
-            if (currentRegionFilter === 'all') \{\
-                document.getElementById('canada-section').style.display = canadaFiltered.length > 0 ? 'block' : 'none';\
-                document.getElementById('global-section').style.display = globalFiltered.length > 0 ? 'block' : 'none';\
-                renderNewsCards(canadaFiltered, 'canada-news');\
-                renderNewsCards(globalFiltered, 'global-news');\
-            \} else if (currentRegionFilter === 'canada') \{\
-                document.getElementById('canada-section').style.display = 'block';\
-                document.getElementById('global-section').style.display = 'none';\
-                renderNewsCards(canadaFiltered, 'canada-news');\
-            \} else \{\
-                document.getElementById('canada-section').style.display = 'none';\
-                document.getElementById('global-section').style.display = 'block';\
-                renderNewsCards(globalFiltered, 'global-news');\
-            \}\
-        \}\
-\
-        function renderAll() \{\
-            filterNews();\
-        \}\
-\
-        function setRegionFilter(region) \{\
-            currentRegionFilter = region;\
-            document.querySelectorAll('.region-btn').forEach(btn => btn.classList.remove('active'));\
-            document.getElementById(`btn-$\{region\}`).classList.add('active');\
-            filterNews();\
-        \}\
-\
-        function refreshNews() \{\
-            fetchNews();\
-        \}\
-\
-        function toggleEmailSettings() \{\
-            document.getElementById('email-settings').classList.toggle('active');\
-            document.getElementById('overlay').classList.toggle('active');\
-        \}\
-\
-        function saveEmailSettings() \{\
-            const email = document.getElementById('team-email').value;\
-            console.log('Email saved:', email);\
-            toggleEmailSettings();\
-        \}\
-\
-        document.getElementById('keyword-filter').addEventListener('keyup', filterNews);\
-        fetchNews();\
-    </script>\
-</body>\
-</html>}
+        <div class="filters">
+            <div class="filter-group">
+                <label>Search by keyword</label>
+                <input type="text" placeholder="E.g., AI, venture capital, Ontario...">
+            </div>
+            <div class="buttons">
+                <button>🔄 Refresh</button>
+                <button class="primary">📧 Email Digest</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🍁 Canada Priority</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="tag canada">Canada</span>
+                    <h3 class="card-headline">OpenAI expands Canadian operations with $50M Toronto research hub</h3>
+                    <p class="card-summary">OpenAI announced a new research center in Toronto focused on AI safety and alignment research.</p>
+                    <div class="card-footer">
+                        <span>BetaKit</span>
+                        <a href="#">Read →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="tag">Policy</span>
+                    <h3 class="card-headline">Ontario launches $100M innovation fund for quantum computing</h3>
+                    <p class="card-summary">The province unveiled a new funding initiative targeting quantum computing companies to support early-stage startups.</p>
+                    <div class="card-footer">
+                        <span>Innovation.ca</span>
+                        <a href="#">Read →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="tag">Investment</span>
+                    <h3 class="card-headline">Canadian venture capital hits record levels in Q2 2026</h3>
+                    <p class="card-summary">Canadian startups raised $2.3B in Q2, up 34% year-over-year with AI and cleantech leading investment trends.</p>
+                    <div class="card-footer">
+                        <span>Pitchbook</span>
+                        <a href="#">Read →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🌍 Global Developments</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="tag">AI</span>
+                    <h3 class="card-headline">OpenAI releases GPT-5 with multimodal reasoning capabilities</h3>
+                    <p class="card-summary">OpenAI unveiled GPT-5 with advanced reasoning across text, images, and video showing significant improvements in complex problem-solving.</p>
+                    <div class="card-footer">
+                        <span>OpenAI Blog</span>
+                        <a href="#">Read →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="tag">Policy</span>
+                    <h3 class="card-headline">EU finalizes AI Act implementation roadmap</h3>
+                    <p class="card-summary">The European Union finalized implementation timelines and compliance requirements for businesses with rules phasing in from 2025.</p>
+                    <div class="card-footer">
+                        <span>EU Official</span>
+                        <a href="#">Read →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="tag">Investment</span>
+                    <h3 class="card-headline">Global AI venture funding reaches $200B milestone in 2026</h3>
+                    <p class="card-summary">Global venture capital investments in AI companies have surpassed $200B in H1 2026, with enterprise AI and autonomous systems leading.</p>
+                    <div class="card-footer">
+                        <span>Crunchbase</span>
+                        <a href="#">Read →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
